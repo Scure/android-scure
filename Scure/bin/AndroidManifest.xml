@@ -9,6 +9,9 @@
         android:targetSdkVersion="17" />
     
     <uses-permission android:name="android.permission.BLUETOOTH" />
+    
+    <!-- Allow to connect with Internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -17,9 +20,8 @@
         android:theme="@style/AppTheme" >
         
         <activity
-            android:name="com.scure.bluetooth.LoginActivity"
-            android:label="@string/app_name"
-            android:windowSoftInputMode="adjustResize|stateVisible" >
+            android:name="com.scure.login.LoginActivity"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER"></category>
@@ -27,12 +29,28 @@
         </activity>
         
         <activity 
+            android:name="com.scure.login.RegisterActivity"
+            android:label="register activity" >
+        </activity>
+        
+        <activity 
+            android:name="com.scure.login.RegisterDeviceActivity"
+            android:label="register device activity" >
+        </activity>
+        
+        <activity 
+            android:name="com.scure.login.RegisterInfoActivity"
+            android:label="register info activity" >
+        </activity>
+        
+        <activity 
+            android:name="com.scure.main.HomeActivity"
+            android:label="home activity" >
+        </activity>
+        
+        <activity 
             android:name="com.scure.bluetooth.Bluetooth"
             android:label="bluetooth activity" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.DEFAULT"></category>
-            </intent-filter>
         </activity>
         
     </application>

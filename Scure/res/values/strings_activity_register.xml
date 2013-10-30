@@ -1,0 +1,24 @@
+<resources>
+    
+    <!-- Strings related to register -->
+    
+    <string name="display_do_you_own_device">Do you own a Scure device?</string>
+    <string name="action_yes">Yes</string>
+    <string name="action_no">No</string>
+    <string name="action_go_to_login">Already have an account?</string>
+    
+    <string name="display_enter_device_id">Enter Device ID</string>
+    <string name="display_id_location">Your 20-digit device identification number 
+        can be found on the bottom of your device.</string>
+    <string name="hint_device_id">HIE93 029FJ 8FNCX I89E0</string>
+    <string name="action_next">Next</string>
+    
+    <string name="display_enter_info">Enter your information</string>
+    <string name="hint_email">E-mail</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_confirm_password">Confirm Password</string>
+    <string name="action_register">Register</string>
+    
+    <string name="error_password_mismatch">Passwords do not match.</string>
+    
+</resources>

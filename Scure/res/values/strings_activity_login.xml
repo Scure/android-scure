@@ -1,15 +1,24 @@
 <resources>
 
     <!-- Strings related to login -->
-    <string name="prompt_email">Email</string>
+    <string name="display_scure">Scure</string>
+    <string name="display_scure_message">Keep track of your home</string>
+    <string name="prompt_email">E-mail</string>
     <string name="prompt_password">Password</string>
-    <string name="action_sign_in_register"><b>Sign in</b> or register</string>
-    <string name="action_sign_in_short">Sign in</string>
+    <string name="action_login">Login</string>
+    <string name="action_go_to_registration">New? Get Started.</string>
+    <string name="action_sign_in_short">Sign In</string>
+    
     <string name="menu_forgot_password">Recover lost password</string>
-    <string name="login_progress_signing_in">Signing in&#8230;</string>
+    <string name="login_progress_logging_in">Logging in…</string>
     <string name="error_invalid_email">This email address is invalid</string>
     <string name="error_invalid_password">This password is too short</string>
     <string name="error_incorrect_password">This password is incorrect</string>
     <string name="error_field_required">This field is required</string>
+    
+    
+    
+    
+    
 
 </resources>

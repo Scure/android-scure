@@ -1,0 +1,171 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".RegisterInfoActivity" >
+    
+    <!-- Login progress -->
+
+    <LinearLayout
+        android:id="@+id/reg_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/reg_status_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/login_progress_logging_in"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+    
+    <!-- Registration form -->
+
+    <RelativeLayout
+        android:id="@+id/reg_info_form"
+        android:layout_width="match_parent"
+     	android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:focusable="true"
+		android:focusableInTouchMode="true" >
+		
+        <TableLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_alignParentTop="true" >
+			<TableRow
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" >
+				<View
+					android:layout_width="0dp"
+					android:layout_height="7dp"
+					android:background="#009999"
+					android:layout_weight="4" />
+				<View
+					android:layout_width="0dp"
+					android:layout_height="7dp"
+					android:background="#FF9933"
+					android:layout_weight="3" />
+				<View
+					android:layout_width="0dp"
+					android:layout_height="7dp"
+					android:background="#B24700"
+					android:layout_weight="2" />
+				<View
+					android:layout_width="0dp"
+					android:layout_height="7dp"
+					android:background="#990000"
+					android:layout_weight="1" />
+			</TableRow>
+		</TableLayout>
+		
+    	<TextView
+        	android:id="@+id/display_enter_your_info"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentLeft="true"
+        	android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:text="@string/display_enter_info"
+            android:textColor="#707070"
+            android:textSize="20sp" />
+    	
+    	<EditText
+            android:id="@+id/reg_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/display_enter_your_info"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="@string/hint_email"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:singleLine="true" />
+    	
+    	<EditText
+            android:id="@+id/reg_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/reg_email"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="@string/hint_password"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:singleLine="true" />
+    	
+    	<EditText
+            android:id="@+id/reg_confirm_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/reg_password"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="@string/hint_confirm_password"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:singleLine="true" />
+    	
+    	<Button
+            android:id="@+id/button_register"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reg_confirm_password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:background="#009999"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:text="@string/action_register"
+            android:textColor="#FFFFFF" />
+    	
+    	<TableLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_alignParentBottom="true" >
+			<TableRow
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" >
+				<View
+					android:layout_width="0dp"
+					android:layout_height="7dp"
+					android:background="#990000"
+					android:layout_weight="4" />
+				<View
+					android:layout_width="0dp"
+					android:layout_height="7dp"
+					android:background="#B24700"
+					android:layout_weight="3" />
+				<View
+					android:layout_width="0dp"
+					android:layout_height="7dp"
+					android:background="#FF9933"
+					android:layout_weight="2" />
+				<View
+					android:layout_width="0dp"
+					android:layout_height="7dp"
+					android:background="#009999"
+					android:layout_weight="1" />
+			</TableRow>
+		</TableLayout>
+    	
+    </RelativeLayout>
+</merge>
