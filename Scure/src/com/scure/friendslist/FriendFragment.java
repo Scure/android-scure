@@ -14,6 +14,8 @@ import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.EditText;
 
+import com.scure.bluetooth.R;
+
 public class FriendFragment extends Fragment {
 	public static final String EXTRA_FRIEND_ID = "com.scure.bluetooth.friend_id";
 

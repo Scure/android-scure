@@ -11,6 +11,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.scure.bluetooth.R;
+
 public class FriendListFragment extends ListFragment {
 	private ArrayList<Friend> mFriends;
 	private static final String TAG = "FriendListFragment";
