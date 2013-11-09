@@ -1,4 +1,4 @@
-package com.scure.bluetooth;
+package com.scure.friendslist;
 
 import java.util.UUID;
 
