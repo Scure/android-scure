@@ -3,7 +3,7 @@
     <string name="app_name">Scure</string>
     <string name="drawer_open">open drawer</string>
     <string name="drawer_close">close drawer</string>
-    
+
     <string name="friend_title_label">Friend</string>
     <string name="friend_title_hint">Enter a task.</string>
     <string name="friend_details_label">Details</string>
